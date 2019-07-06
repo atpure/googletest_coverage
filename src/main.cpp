@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include "absol.h"
 
 int main() {
     int ret;
 
-    ret = 1;
+    ret = absol_f(2, 7); 
     printf("Val: %d\n", ret);
     return ret;
 }
