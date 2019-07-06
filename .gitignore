@@ -3,4 +3,5 @@ cmake_install.cmake
 CMakeFiles
 Makefile
 
-gtest
+gtestSample
+unittest/gtestSample_test

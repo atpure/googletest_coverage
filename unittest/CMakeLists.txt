@@ -9,8 +9,13 @@ set(SRC
 	main_tc.cc
 	src/absol_tc.cc
 	${PROJECT_BINARY_DIR}/src/absol.cpp
+	${PROJECT_BINARY_DIR}/src/multi.cpp
 )
 
 add_executable(${TARGET} ${SRC})
 
 target_link_libraries(${TARGET} ${GTEST_LIBRARIES} pthread)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
+
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")

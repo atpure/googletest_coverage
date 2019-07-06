@@ -10,4 +10,6 @@ int absol_f(int a, int b) {
     } else {
         ret = b - a;
     }
+
+    return ret;
 }
