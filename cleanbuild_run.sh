@@ -1,2 +1,3 @@
 #!/bin/bash
-rm gtest
+rm gtestSample
+rm ./unittest/gtestSample_test
