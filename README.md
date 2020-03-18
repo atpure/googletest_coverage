@@ -1,7 +1,11 @@
 # googletest_coverage
 
 ## Build
-\$ cmake CMakeLists.txt
+\$ mkdir build
+
+\$ cd build
+
+\$ cmake ..
 
 \$ make
 
