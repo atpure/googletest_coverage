@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 2.6)
 
 find_package(GTest REQUIRED)
-include_directories(${GTEST_INCLUDE_DIR} ${PROJECT_SOURCE_DIR}/src)
+include_directories(${GTEST_INCLUDE_DIR} ${CMAKE_SOURCE_DIR}/src)
 
 set(TARGET ${CMAKE_PROJECT_NAME}_test)
 
 set(SRC
 	main_tc.cc
 	src/absol_tc.cc
-	${PROJECT_SOURCE_DIR}/src/absol.cpp
-	${PROJECT_SOURCE_DIR}/src/multi.cpp
+	${CMAKE_SOURCE_DIR}/src/absol.cpp
 )
 
 add_executable(${TARGET} ${SRC})

@@ -7,8 +7,11 @@ set(TARGET ${CMAKE_PROJECT_NAME})
 set(SRC
 	src/main.cpp
 	src/absol.cpp
+	src/multi.cpp
 )
 
 add_executable(${TARGET} ${SRC})
 
 add_subdirectory(unittest)
+
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} --coverage")
